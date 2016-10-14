@@ -13,6 +13,8 @@
 		FA1548DF1DAE95E20045DFA8 /* MVC_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA1548DD1DAE95E20045DFA8 /* MVC_Test.xcdatamodeld */; };
 		FA1548E11DAE95E20045DFA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1548E01DAE95E20045DFA8 /* Assets.xcassets */; };
 		FA1548E41DAE95E20045DFA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1548E21DAE95E20045DFA8 /* LaunchScreen.storyboard */; };
+		FA1548EF1DAE96D80045DFA8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1548EE1DAE96D80045DFA8 /* Person.swift */; };
+		FA1548F11DAF7E950045DFA8 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1548F01DAF7E950045DFA8 /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA1548E01DAE95E20045DFA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA1548E31DAE95E20045DFA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1548E51DAE95E20045DFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA1548EE1DAE96D80045DFA8 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FA1548F01DAF7E950045DFA8 /* RoundedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		FA1548D51DAE95E20045DFA8 /* MVC-Test */ = {
 			isa = PBXGroup;
 			children = (
+				FA1548ED1DAE965C0045DFA8 /* Controller */,
+				FA1548EC1DAE96550045DFA8 /* View */,
+				FA1548EB1DAE96490045DFA8 /* Model */,
 				FA1548D61DAE95E20045DFA8 /* AppDelegate.swift */,
-				FA1548D81DAE95E20045DFA8 /* ViewController.swift */,
 				FA1548DA1DAE95E20045DFA8 /* Main.storyboard */,
 				FA1548E01DAE95E20045DFA8 /* Assets.xcassets */,
 				FA1548E21DAE95E20045DFA8 /* LaunchScreen.storyboard */,
@@ -65,6 +71,30 @@
 				FA1548DD1DAE95E20045DFA8 /* MVC_Test.xcdatamodeld */,
 			);
 			path = "MVC-Test";
+			sourceTree = "<group>";
+		};
+		FA1548EB1DAE96490045DFA8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FA1548EC1DAE96550045DFA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA1548D81DAE95E20045DFA8 /* ViewController.swift */,
+				FA1548F01DAF7E950045DFA8 /* RoundedImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FA1548ED1DAE965C0045DFA8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA1548EE1DAE96D80045DFA8 /* Person.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1548D91DAE95E20045DFA8 /* ViewController.swift in Sources */,
+				FA1548F11DAF7E950045DFA8 /* RoundedImageView.swift in Sources */,
 				FA1548DF1DAE95E20045DFA8 /* MVC_Test.xcdatamodeld in Sources */,
+				FA1548EF1DAE96D80045DFA8 /* Person.swift in Sources */,
 				FA1548D71DAE95E20045DFA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +336,7 @@
 				FA1548EA1DAE95E20045DFA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

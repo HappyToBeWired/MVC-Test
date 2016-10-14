@@ -10,16 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let person = Person(first: "John", last: "Hancock")
+    @IBOutlet weak var fullName: UILabel!
+    
+    @IBOutlet weak var changeNameText: UITextField!
+    @IBOutlet weak var vegImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+     
+        
+       
+        
+     fullName.text = person.fullName
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
+    @IBAction func ChangeNamePressedButton(_ sender: AnyObject) {
+        if let txt  = changeNameText.text{
+            person.firstName = txt
+            fullName.text = person.fullName
+        }
+        
+    }
 
 }
 
